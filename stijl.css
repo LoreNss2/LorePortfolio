@@ -1,0 +1,322 @@
+/*fonts:
+font-family: 'Anton', sans-serif;
+font-family: 'Playfair Display', serif; 400 en 700
+font-family: 'Montserrat', sans-serif;  100 (thin), 200 italic, 400 (regular en italic),600 (semi-bold) en 900 (black)*/
+
+/*kleuren:
+olijf: #92977E
+grijs: #303036
+wit: #FFFAFF
+oranje: #E98A15   (licht #F5C994)
+donkergroen: #0A2E36    (licht #A5B3B5)*/
+
+/*algemene layout*/
+
+body {
+  height: 100vh;
+  background-color: #FFFAFF;
+  overflow: scroll;
+}
+
+header {
+  height: 10rem;
+  background-color: #FFFAFF;
+  width: 100vw;
+  position: fixed;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  color: #0A2E36;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  padding-left: 20rem;
+  color: #303036;
+}
+
+h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  color: #FFFAFF;
+  border-bottom: #FFFAFF 0.5rem solid;
+  padding-bottom: 5rem;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #FFFAFF;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: normal;
+  text-align: justify;
+  line-height: 2.5rem;
+  padding: 1rem;
+  color: #303036;
+}
+
+nav {
+  background-color: #0A2E36;
+  color: #FFFAFF;
+  list-style-type: column;
+  height: 100vh;
+  width: 15vw;
+  position: fixed;
+  left: 85vw;
+  top: 0;
+  text-decoration: none;
+  padding-top: 80vh;
+}
+
+li, a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #FFFAFF;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #FFFAFF;
+  color: #E98A15;
+  font-weight: 900;
+  transform: scale(1.1, 1.1);
+}
+
+nav a:hover {
+  color: #E98A15;
+  transform: scale(1.1, 1.1);
+}
+
+img {
+  width: 100%;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.homepage {
+  padding-top: 15rem;
+  height: 100vh;
+}
+
+.een, .twee, .drie, .vier, .vijf, .zes {
+  display: block;
+  width: 85vw;
+  padding: 2.5vw;
+  position: absolute;
+}
+
+@keyframes verschijnen{
+    0%{opacity:0;}
+    100%{opacity: 1;}
+}
+
+.een {
+  animation-name: verschijnen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.twee {
+  animation-name: verschijnen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.drie {
+  animation-name: verschijnen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  opacity: 0;
+}
+.vier{
+  animation-name: verschijnen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 12s;
+  opacity: 0;
+}
+.vijf{
+  animation-name: verschijnen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 16s;
+  opacity: 0;
+}
+.zes{
+  animation-name: verschijnen;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+  opacity: 0;
+}
+
+.text {
+  width: 80vw;
+  margin-left: 1rem;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  opacity: 1;
+  margin-bottom: 5rem;
+}
+
+.kader {
+  background-color: #FFFAFF;
+  margin-top: 30rem;
+  height: 40rem;
+  width: 85vw;
+}
+
+.achtergrondfoto {
+  display: block;
+  width: 85vw;
+  padding: 2.5vw;
+  position: absolute;
+  top: 10rem;
+  z-index: -1;
+}
+
+.contact {
+  background-color: #303036;
+  height: 80vh;
+  width: 80vw;
+  margin-left: 2.5vw;
+  position: relative;
+  padding: 10rem;
+}
+
+/*layout masonry-style*/
+
+.witruimte{
+  padding: 8rem;
+}
+
+.rooster {
+  column-count: 2;
+  column-gap: 1vw;
+  padding-right: 16vw;
+  padding-left: 1vw;
+  padding-top: 1rem;
+}
+
+.hover {
+  break-inside: avoid;
+  display: block;
+  text-decoration: none;
+}
+
+h4 {
+  display: block;
+  break-inside: avoid;
+  text-decoration: none;
+  color: #303036;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/*afbeeldingen in grayscale hovereffect*/
+
+.hover figure img {
+  filter: grayscale(100%);
+  transition: 0.5s ease-in-out;
+}
+
+.hover figure:hover img {
+  filter: grayscale(0);
+}
+
+/*layout footer*/
+
+footer {
+  width: 85vw;
+  background-color: #303036;
+  height: 5rem;
+  text-align: center;
+  padding-left: 15vw;
+  padding-top: 2rem;
+  bottom: 0;
+  position: fixed;
+}
+
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  font-variant: small-caps;
+  padding-right: 15vw;
+  color: #FFFAFF;
+}
+
+/*layout vanaf 700px*/
+
+@media (min-width: 700px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    padding-left: 25rem;
+  }
+
+  li, a{
+    font-size: 2rem;
+      text-align: right;
+  }
+
+  .rooster {
+    column-count: 3;
+  }
+
+}
+
+/*layout vanaf 1000px*/
+
+@media (min-width: 1000px) {
+
+  .text {
+    width: 25vw;
+    margin-left: 50vw;
+    margin-top: 15rem;
+    padding-top: 2.5rem;
+    opacity: 1;
+  }
+
+  .kader {
+    background-color: #FFFAFF;
+    margin-top: 20rem;
+    height: 40rem;
+    width: 85vw;
+    opacity: 0.4;
+  }
+
+  .rooster {
+    column-count: 4;
+  }
+
+}
